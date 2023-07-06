@@ -1,8 +1,11 @@
 import profileImgFrank from "../assets/profile-img-frank.jpg";
 import profileImgPeter from "../assets/profile-img-peter.jpg";
 import profileImgBrian from "../assets/profile-img-brian.jpg";
+import searchImg from "../assets/Search-feature.png";
+import sortImg from "../assets/Sort-feature.png";
+import cartImg from "../assets/cart-feature.png";
 
-const profileData = [
+export const profileData = [
   {
     id: 1,
     name: "Francis Mwangi",
@@ -31,4 +34,26 @@ const profileData = [
     twitter: "https://twitter.com/njaagagakure",
   },
 ];
-export default profileData;
+export const featureList = [
+  {
+    id: 1,
+    img: searchImg,
+    name: "Search Feature",
+    description:
+      "Looking for a specific computer? Use this feature to search by name.",
+  },
+  {
+    id: 2,
+    img: sortImg,
+    name: "Sort Feature",
+    description:
+      "Browsing for a computer within your budget? Use this feature to sort by price, or name.",
+  },
+  {
+    id: 3,
+    img: cartImg,
+    name: "Cart Feature",
+    description:
+      "Looking to track your spending? Use this feature to calculate the total cost of your order.",
+  },
+];

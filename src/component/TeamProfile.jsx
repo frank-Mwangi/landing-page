@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import profileData from "../utils/data";
+import { profileData } from "../utils/data";
 import MemberProfile from "./MemberProfile";
 const TeamProfile = () => {
   return (
