@@ -46,7 +46,7 @@ const Wrapper = styled.section`
   }
   .profile-list {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     justify-content: center;
     gap: 2rem;
   }
