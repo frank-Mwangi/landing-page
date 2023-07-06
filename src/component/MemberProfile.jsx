@@ -14,7 +14,6 @@ const MemberProfile = ({
       <img className="profile-img" src={profile_img} alt={name} width="50px" />
       <div className="profile-info">
         <h5 className="member-name">{name}</h5>
-        <p className="member-info">{info}</p>
       </div>
       <div className="contact">
         <a href={git_profile} target="_blank" rel="noreferrer">
@@ -50,12 +49,7 @@ const Wrapper = styled.article`
   .member-name {
     color: var(--white);
     letter-spacing: var(--letter-spacing);
-  }
-
-  .member-info {
-    text-align: left;
-    letter-spacing: var(--letter-spacing);
-    color: var(--gray-400);
+    margin: 1rem;
   }
   .contact {
     display: flex;
@@ -63,7 +57,7 @@ const Wrapper = styled.article`
     gap: 1rem;
     svg {
       color: var(--white);
-      font-size: 1.5rem;
+      font-size: 1.25rem;
       transition: var(--transition);
       &:hover {
         color: var(--gray-500);
