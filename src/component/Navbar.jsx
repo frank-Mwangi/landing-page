@@ -1,5 +1,6 @@
 import { styled } from "styled-components";
-const Navbar = () => {
+import {FaBars} from "react-icons/fa"
+const Navbar = ({openSidebar}) => {
   return (
     <Nav>
       <div className="center-container">
@@ -14,6 +15,9 @@ const Navbar = () => {
             <a href="#team-profile">team profile</a>
           </li>
         </ul>
+        <button>
+          <FaBars onClick={openSidebar}/>
+        </button>
       </div>
     </Nav>
   );
@@ -22,20 +26,41 @@ const Navbar = () => {
 const Nav = styled.nav`
   background: #222222;
   .center-container {
+    display: flex;
+    justify-content: flex-end;
     ul {
-      display: flex;
+      display: none;
+    }
+    button {
+      background: transparent;
+      border-color: transparent;
+      cursor: pointer;
+    }
+    svg {
+      font-size: 2rem;
+      color: white;
+    }
+  }
+  @media(min-width: 700px) {
+    .center-container {
       justify-content: center;
-      gap: 2rem;
-      letter-spacing: var(--letter-spacing);
-      text-transform: capitalize;
-      li {
-        cursor: pointer;
-        color: var(--gray-100);
-        transition: var(--transition);
-        &:hover {
-          // color: var(--gray-400);
-          border-bottom: 1px solid var(--white);
+      ul {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        letter-spacing: var(--letter-spacing);
+        text-transform: capitalize;
+        li {
+          cursor: pointer;
+          color: var(--gray-100);
+          transition: var(--transition);
+          &:hover {
+            border-bottom: 1px solid var(--white);
+          }
         }
+      }
+      button {
+        display: none;
       }
     }
   }

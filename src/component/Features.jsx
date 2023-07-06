@@ -21,6 +21,7 @@ const Features = () => {
 
 const Wrapper = styled.section`
   background: var(--gray-50);
+  padding-bottom: 3rem;
   .center-container {
   }
   .title {

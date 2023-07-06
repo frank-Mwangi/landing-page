@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { FiShoppingCart } from "react-icons/fi";
 const Feature = (props) => {
   const { icon, name, description } = props;
   return (
@@ -20,6 +19,7 @@ const Wrapper = styled.article`
   color: var(--white);
   border-radius: 5px;
   padding: 1rem;
+  margin-top: 2rem;
   box-shadow: var(--shadow-2);
   .feature-name {
     margin: 0;
@@ -43,6 +43,9 @@ const Wrapper = styled.article`
   }
   svg {
     font-size: 1.5rem;
+  }
+  .feature-desc {
+    letter-spacing: var(--letter-spacing);
   }
 `;
 export default Feature;
