@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import { FaGithub } from "react-icons/fa";
 const About = () => {
   return (
     <Wrapper id="about">
@@ -19,6 +19,16 @@ const About = () => {
           stores in the capital. To gain a competitive edge, we sought out to
           create an eCommerce platform to cater to the online demographic.
         </p>
+        <div className="btn-container">
+          <a
+            className="btn"
+            href="https://github.com/Njaaga-Gakure/A2Z-app.git"
+            target="_blank"
+          >
+            <FaGithub />
+            github link
+          </a>
+        </div>
       </div>
     </Wrapper>
   );
@@ -49,6 +59,26 @@ const Wrapper = styled.section`
       color: var(--gray-700);
       letter-spacing: var(--letter-spacing);
       line-height: 1.6;
+    }
+  }
+  .btn-container {
+    display: flex;
+    justify-content: center;
+  }
+  .btn {
+    background: #222222;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    display: flex;
+    width: 200px;
+    height: 40px;
+    align-items: center;
+    border-radius: 5px;
+    gap: 5px;
+    transition: var(--transition);
+    &:hover {
+      background: var(--gray-700);
+      transform: scale(1.1);
     }
   }
 `;

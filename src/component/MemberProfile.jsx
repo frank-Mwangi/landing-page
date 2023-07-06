@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
+
 const MemberProfile = ({
   name,
   profile_img,
