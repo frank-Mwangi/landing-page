@@ -5,7 +5,9 @@ const Feature = (props) => {
   return (
     <Wrapper>
       <div className="feature-info">
-        <span>{icon}</span>
+        <div className="icon-container">
+          <span>{icon}</span>
+        </div>
         <h4 className="feature-name">{name}</h4>
         <div className="underline"></div>
         <p className="feature-desc">{description}</p>
@@ -28,8 +30,19 @@ const Wrapper = styled.article`
     height: 0.25rem;
     background: var(--white);
   }
+  .icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border: 2px solid var(--white);
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+  }
   svg {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 `;
 export default Feature;
