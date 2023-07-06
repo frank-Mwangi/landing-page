@@ -18,7 +18,7 @@ const Hero = () => {
 };
 const Wrapper = styled.section`
   background-color: #222222;
-  background-image: url("../public/hero-img-5.jpg");
+  background-image: url("/hero-img-5.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

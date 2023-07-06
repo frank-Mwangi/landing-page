@@ -40,6 +40,7 @@ const Wrapper = styled.section`
   .feature-list {
     margin-top: 1rem;
     display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 1rem;
   }
 `;

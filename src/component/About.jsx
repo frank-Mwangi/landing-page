@@ -35,7 +35,7 @@ const About = () => {
 };
 const Wrapper = styled.section`
   background: var(--gray-50);
-  padding: 5rem 2rem;
+  padding: 3rem 2rem;
   .center-container {
     h2 {
       text-transform: capitalize;
